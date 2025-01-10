@@ -1,0 +1,23 @@
+Created by veyse on 10.01.2025
+
+This is a concept file with following syntax for each concept.
+# Add Money butonuna tiklanir.
+* Sayfada "addMoneyButton" elementinin görünür olana kadar beklenir.
+* Sayfada "addMoneyButton" elementine tıklanır.
+* Sayfada "addMoneyPageControl" elementinin text'i "Add money" ile doğrulanır.
+* Sayfada "editAccountPageAccountName" elementinin varlığı doğrulanır.
+* "addMoneyPageVisibleControl" elementinde yer alan textler dogrulanir.
+
+# Card Number alanina <cardNumber> yazilir.
+* "2" saniye bekle
+* Sayfada "addMoneyPageCardNumber" alanına <cardNumber> yazılır.
+
+# Card number alanina 20 haneli kart numarasi girilir.
+* Card Number alanina "1234 1234 1234 1234" yazilir.
+
+# Card Holder alanina kart sahibi adi <cardHolder> yazilir.
+* "2" saniye bekle
+* Sayfada "addMoneyPageCardHolder" alanına <cardHolder> yazılır.
+
+# Card Holder alanina kart sahibi ismi yazilir.
+* Card Holder alanina kart sahibi adi "Veysel Öner" yazilir.

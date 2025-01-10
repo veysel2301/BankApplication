@@ -1,0 +1,72 @@
+{
+  "username": {
+    "value": "input[placeholder='Username']",
+    "type" : "css"
+
+  },
+  "password": {
+    "value": "input[placeholder='Password']",
+    "type" : "css"
+
+  },
+  "loginButton": {
+    "value": "//div[@class='css-146c3p1 r-jwli3a r-1b43r93'  and text()='Login']",
+    "type" : "xpath"
+  },
+  "openMoneyTransferAppButton": {
+    "value": "//div[@class='css-146c3p1 r-jwli3a r-1b43r93'  and text()='Open Money Transfer']",
+    "type" : "xpath"
+  },
+  "accountNameTextControl": {
+    "value": "[class='css-175oi2r r-14lw9ot r-z2wwpe r-edyy15'] [class='css-175oi2r']:nth-of-type(1) [class='css-146c3p1 r-1ozpqpt r-yv33h5 r-1b43r93']",
+    "type" : "css"
+  },
+  "accountTypeTextControl": {
+    "value": "[class] [class='css-175oi2r']:nth-of-type(3) [class='css-146c3p1 r-1ozpqpt r-yv33h5 r-1b43r93']",
+    "type" : "css"
+  },
+  "creationTimeTextControl": {
+    "value": "[class] [class='css-175oi2r']:nth-of-type(5) [class='css-146c3p1 r-1ozpqpt r-yv33h5 r-1b43r93']",
+    "type" : "css"
+  },
+  "amountTextControl": {
+    "value": "div:nth-of-type(7) > .css-175oi2r > .css-146c3p1.r-1b43r93.r-1ozpqpt.r-yv33h5",
+    "type" : "css"
+  },
+  "editAccountButton": {
+    "value": "//div[@class='css-146c3p1 r-jwli3a r-1b43r93'  and text()='Edit account']",
+    "type" : "xpath"
+  },
+  "editAccountPageControl": {
+    "value": "//div[@class='css-146c3p1 r-ubezar r-vw2c0b'  and text()='Edit account']",
+    "type" : "xpath"
+  },
+  "editAccountPageAccountName": {
+    "value": "[class='css-11aywtz r-6taxm2 r-1eh6qqt r-z2wwpe r-rs99b7 r-h3s6tt r-1qhn6m8']",
+    "type" : "css"
+  },
+  "editAccountPageUpdateButton": {
+    "value": "[class='css-175oi2r r-1i6wzkk r-lrvibr r-1loqt21 r-1otgn73 r-1awozwy r-169ebfh r-z2wwpe r-h3s6tt r-1777fci r-tsynxw r-13qz1uu'] [class]",
+    "type" : "css"
+  },
+  "addMoneyButton": {
+    "value": "//div[@class='css-146c3p1 r-jwli3a r-1b43r93'  and text()='Add money']",
+    "type" : "xpath"
+  },
+  "addMoneyPageControl": {
+    "value": ".css-146c3p1.r-ubezar.r-vw2c0b",
+    "type" : "css"
+  },
+  "addMoneyPageVisibleControl": {
+    "value": "[class] [class='css-146c3p1 r-1ozpqpt r-g6644c r-1b43r93 r-15zivkp']",
+    "type" : "css"
+  },
+  "addMoneyPageCardNumber": {
+    "value": "[class] [class='css-175oi2r r-13qz1uu']:nth-of-type(2) input",
+    "type" : "css"
+  },
+  "addMoneyPageCardHolder": {
+    "value": "[class] [class='css-175oi2r r-13qz1uu']:nth-of-type(4) input",
+    "type" : "css"
+  }
+}

@@ -1,0 +1,35 @@
+Created by veyse on 10.01.2025
+
+This is a concept file with following syntax for each concept.
+# Edit Account butonuna tiklanir.
+* Sayfada "editAccountButton" elementinin görünür olana kadar beklenir.
+* Sayfada "editAccountButton" elementine tıklanır.
+* Sayfada "editAccountPageControl" elementinin text'i "Edit account" ile doğrulanır.
+* Sayfada "editAccountPageAccountName" elementinin varlığı doğrulanır.
+
+# Account name alani temizlenir ve yeni account name <accountName> yazilir.
+* Sayfada "editAccountPageAccountName" alanı temizlenir ve <accountName> text degeri yazilir.
+
+# Update butonuna tiklanir ve uygulama ana sayfasinda account isminin <accountName> degistigi görülür.
+* Sayfada "editAccountPageUpdateButton" elementine tıklanır.
+* Sayfada "accountNameTextControl" elementinin varlığı doğrulanır.
+* "1" saniye bekle
+* Sayfada "accountNameTextControl" elementinin text'i <accountName> ile doğrulanır.
+
+# Account name alani <accountNameDefault> önceki haline döndürülür.
+* Sayfada "editAccountPageAccountName" alanı temizlenir ve <accountNameDefault> text degeri yazilir.
+
+# Account name degistirilir.
+* Account name alani temizlenir ve yeni account name "veyselonerChange" yazilir.
+* Update butonuna tiklanir ve uygulama ana sayfasinda account isminin "veyselonerChange" degistigi görülür.
+
+# Update butonuna tiklanir ve uygulama ana sayfasinda account isminin <accountNameDefault> eski haline geldigi görülür.
+* Sayfada "editAccountPageUpdateButton" elementine tıklanır.
+* Sayfada "accountNameTextControl" elementinin varlığı doğrulanır.
+* "1" saniye bekle
+* Sayfada "accountNameTextControl" elementinin text'i <accountNameDefault> ile doğrulanır.
+
+# Account name önceki haline döndürülür.
+* Edit Account butonuna tiklanir.
+* Account name alani "veyseloner" önceki haline döndürülür.
+* Update butonuna tiklanir ve uygulama ana sayfasinda account isminin "veyseloner" eski haline geldigi görülür.
