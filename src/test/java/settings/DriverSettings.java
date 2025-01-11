@@ -77,8 +77,6 @@ public class DriverSettings {
 
     private static void setAndroidDriver() {
         ChromeOptions options = new ChromeOptions();
-
-        // Android için mobile emülasyonu ayarları
         options.setExperimentalOption("mobileEmulation", ImmutableMap.of("deviceName", "Pixel 7"));
 
         DesiredCapabilities capabilities = new DesiredCapabilities();

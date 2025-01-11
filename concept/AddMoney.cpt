@@ -9,15 +9,82 @@ This is a concept file with following syntax for each concept.
 * "addMoneyPageVisibleControl" elementinde yer alan textler dogrulanir.
 
 # Card Number alanina <cardNumber> yazilir.
-* "2" saniye bekle
 * Sayfada "addMoneyPageCardNumber" alanına <cardNumber> yazılır.
 
 # Card number alanina 20 haneli kart numarasi girilir.
-* Card Number alanina "1234 1234 1234 1234" yazilir.
+* Card Number alanina "1234123412341234" yazilir.
 
 # Card Holder alanina kart sahibi adi <cardHolder> yazilir.
-* "2" saniye bekle
 * Sayfada "addMoneyPageCardHolder" alanına <cardHolder> yazılır.
 
 # Card Holder alanina kart sahibi ismi yazilir.
 * Card Holder alanina kart sahibi adi "Veysel Öner" yazilir.
+
+# Expiry Date alanina kartin son kullanma tarihi <expiryDate> yazilir.
+* Sayfada "addMoneyExpiryDate" alanına <expiryDate> yazılır.
+
+# Expiry Date alanina kartin son kullanma tarihi yazilir.
+* Expiry Date alanina kartin son kullanma tarihi "0126" yazilir.
+
+# CVV alanina kartin guvenlik kodu <cvv> yazilir.
+* Sayfada "addMoneyCvv" alanına <cvv> yazılır.
+
+# CVV alanina kartin guvenlik kodu yazilir.
+* CVV alanina kartin guvenlik kodu "110" yazilir.
+
+# Amount alanina eklenmek istenen miktar <amountAddMoney> yazilir.
+* Sayfada "addMoneyAmount" alanına <amountAddMoney> yazılır.
+
+# Amount alanina eklenmek istenen miktar yazilir.
+* Amount alanina eklenmek istenen miktar "100" yazilir.
+# Add butonuna tiklanir.
+* Sayfada "addMoneyAddButton" elementine tıklanır.
+* Eklenen miktarin ne kadar oldugu hesaplanir.
+
+# Eklenen miktarin ne kadar oldugu hesaplanir.
+* "addMoneyAmount" elementindeki eklenen tutari "100" olarak kaydet
+* "2" saniye bekle
+* Add money icin "amountTextControl" de ki baslangic tutarini alip eklenen miktar "addMoneyAmount" ile karsilastir
+
+# Card Number alanı bos birakilarak zorunlu uyarisi görülür.
+* Sayfada "addMoneyPageCardHolder" elementine tıklanır.
+* Sayfada "addMoneyWarningCardNumber" elementinin text'i "Required" ile doğrulanır.
+
+
+# Card Holder alanı bos birakilarak zorunlu uyarisi görülür.
+* Sayfada "addMoneyExpiryDate" elementine tıklanır.
+* Sayfada "addMoneyWarningCardHolder" elementinin text'i "Required" ile doğrulanır.
+
+# Expiry Date alanı bos birakilarak zorunlu uyarisi görülür.
+* Sayfada "addMoneyCvv" elementine tıklanır.
+* Sayfada "addMoneyWarningExpiryDate" elementinin text'i "Required" ile doğrulanır.
+
+# Cvv alanı bos birakilarak zorunlu uyarisi görülür.
+* Sayfada "addMoneyAmount" elementine tıklanır.
+* Sayfada "addMoneyWarningCvv" elementinin text'i "Required" ile doğrulanır.
+
+# Amount alanı bos birakilarak zorunlu uyarisi görülür.
+* Sayfada "addMoneyCvv" elementine tıklanır.
+* Sayfada "addMoneyWarningAmount" elementinin text'i "Required" ile doğrulanır.
+
+# Card Number alanina eksik veri girilerek uyarı aldığı görüntülenir.
+* Sayfada "addMoneyPageCardNumber" alanına "123" yazılır.
+* Sayfada "addMoneyPageCardHolder" elementine tıklanır.
+* Sayfada "addMoneyWarningCardNumber" elementinin text'i "Too Short!" ile doğrulanır.
+
+# Card Holder alanina eksik veri girilerek uyarı aldığı görüntülenir.
+* Sayfada "addMoneyPageCardHolder" alanına "123" yazılır.
+* Sayfada "addMoneyExpiryDate" elementine tıklanır.
+* Sayfada "addMoneyWarningCardHolder" elementinin text'i "Too Short!" ile doğrulanır.
+
+# Expiry Date alanina eksik veri girilerek uyarı aldığı görüntülenir.
+* Sayfada "addMoneyExpiryDate" alanına "123" yazılır.
+* Sayfada "addMoneyCvv" elementine tıklanır.
+* Sayfada "addMoneyWarningExpiryDate" elementinin text'i "Wrong date. Please give a correct date" ile doğrulanır.
+
+# Cvv alanina eksik veri girilerek uyarı aldığı görüntülenir.
+* Sayfada "addMoneyCvv" alanına "12" yazılır.
+* Sayfada "addMoneyAmount" elementine tıklanır.
+* Sayfada "addMoneyWarningCvv" elementinin text'i "Too short" ile doğrulanır.
+
+

@@ -1,0 +1,30 @@
+Created by veyse on 11.01.2025
+
+This is a concept file with following syntax for each concept.
+# Transfer Money butonuna tiklanir.
+* "amountTextControl" elementindeki degeri hafizaya kaydet
+* Sayfada "transferMoneyButton" elementine tıklanır.
+
+# Transfer money sayfasinin acildigi kontrol edilir.
+* Sayfada "senderAccount" elementinin text'i "veyseloner" ile doğrulanır.
+* "transferMoneyPageControl" elementinde yer alan textler dogrulanir.
+
+# Sender account <sender> ve Recieve account secilir
+* "transferMoneySenderAccountSelect" elementinde yer alan seçeneklerden <sender> degerini sec
+* "30" saniye bekle
+//* "transferMoneyReceiveAccountSelect" elementinde yer alan seçeneklerden <receive> degerini sec
+
+# Sender acccount ve Recieve account secimi yapilir.
+//Receive eke hata verdir
+* Sender account "veyseloner" ve Recieve account secilir
+
+# Amount alanina transfer edilmek istenilen miktar yazilir.
+* Sayfada "transferMoneyAmount" alanına "100" yazılır.
+
+# Send butonuna tiklanir ve transfer isleminin yapildigi görülür.
+* Sayfada "transferMoneySendButton" elementine tıklanır.
+
+# Transfer edilen miktarin ne kadar oldugu hesaplanir.
+* "transferMoneyAmount" elementindeki eklenen tutari "100" olarak kaydet
+* "5" saniye bekle
+* Transfer icin "amountTextControl" de ki baslangic tutarini alip eklenen miktar "transferMoneyAmount" ile karsilastir ve transfer alanını "transferMoneyTransferAmountControl" kontrol et.
