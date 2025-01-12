@@ -2,13 +2,13 @@ Created by veyse on 11.01.2025
 
 This is a concept file with following syntax for each concept.
 # Transfer Money butonuna tiklanir.
-* "3" saniye bekle
+* Sayfada "amountTextControl" elementinin görünür olana kadar beklenir.
 * "amountTextControl" elementindeki degeri hafizaya kaydet
 * Sayfada "transferMoneyButton" elementinin görünür olana kadar beklenir.
 * Sayfada "transferMoneyButton" elementine tıklanır.
 
 # Transfer money sayfasinin acildigi kontrol edilir.
-* "2" saniye bekle
+* Sayfada "senderAccount" elementinin görünür olana kadar beklenir.
 * Sayfada "senderAccount" elementinin text'i "veyseloner" ile doğrulanır.
 * "transferMoneyPageControl" elementinde yer alan textler dogrulanir.
 

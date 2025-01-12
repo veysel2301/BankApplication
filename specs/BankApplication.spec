@@ -85,7 +85,7 @@ Tags: edge,Transfer_Money_Receive_Account_Negative
 
 Add Money Warning Messages
 ----------------------
-Tags:chrome,Add_Money_Warning_Messages
+Tags:mobile,android,Add_Money_Warning_Messages
 
 * Web sayfası "https://catchylabs-webclient.testinium.com/" adresinden açılır.
 * Kullanici adi ve şifre ile giris yapilir.
