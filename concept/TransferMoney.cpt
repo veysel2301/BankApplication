@@ -14,7 +14,6 @@ This is a concept file with following syntax for each concept.
 
 # Sender account <sender> secilir.
 * "transferMoneySenderAccountSelect" elementinde yer alan seçeneklerden <sender> degerini sec
-* "3" saniye bekle
 # Recieve account <receive> secimi yapilir.
 * "transferMoneyReceiveAccountSelect" elementinde yer alan seçeneklerden <receive> degerini sec
 
