@@ -13,6 +13,14 @@
     "value": "//div[@class='css-146c3p1 r-jwli3a r-1b43r93'  and text()='Login']",
     "type" : "xpath"
   },
+  "backButton": {
+    "value": ".css-146c3p1.r-lrvibr",
+    "type" : "css"
+  },
+  "logOutButton": {
+    "value": "[class='css-146c3p1 r-jwli3a r-vw2c0b r-1d4mawv']",
+    "type" : "css"
+  },
   "openMoneyTransferAppButton": {
     "value": "//div[@class='css-146c3p1 r-jwli3a r-1b43r93'  and text()='Open Money Transfer']",
     "type" : "xpath"

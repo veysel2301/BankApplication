@@ -17,4 +17,12 @@ This is a concept file with following syntax for each concept.
 * Sayfada "amountTextControl" elementinin görünür olana kadar beklenir.
 * Sayfada "amountTextControl" elementinin görünür olana kadar beklenir.
 * Bakiyeyi "amountTextControl" elementinden al ve kontrol et
-//* Sayfada "amountTextControl" elementinin text'i "10,000,000.00" ile doğrulanır.
+
+# Back butonuna tiklanir ve Open Money Transfer ekranına gelindiği kontrol edilir.
+* "backButton" elementine js ile tiklanir.
+* Sayfada "openMoneyTransferAppButton" elementinin görünür olana kadar beklenir.
+
+# Logout butonuna tiklanir ve uygulamadan cikis yapıldığı görüntülenir.
+* Sayfada "logOutButton" elementinin görünür olana kadar beklenir.
+* "logOutButton" elementine js ile tiklanir.
+* Sayfada "loginButton" elementinin görünür olana kadar beklenir.

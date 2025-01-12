@@ -1,11 +1,20 @@
 #BankApplication
 
-Money Transfer App Control
+Login and Money Transfer App Control
 -------------------
-Tags: chrome,Money_Transfer_App_Control
+Tags: chrome,Login_And_Money_Transfer_App_Control
 * Web sayfası "https://catchylabs-webclient.testinium.com/" adresinden açılır.
 * Kullanici adi ve şifre ile giris yapilir.
 * Account name,account type,creation time ve amount alanları kontrol edilir.
+
+Logout
+-------------------
+Tags: chrome,Logout
+* Web sayfası "https://catchylabs-webclient.testinium.com/" adresinden açılır.
+* Kullanici adi ve şifre ile giris yapilir.
+* Account name,account type,creation time ve amount alanları kontrol edilir.
+* Back butonuna tiklanir ve Open Money Transfer ekranına gelindiği kontrol edilir.
+* Logout butonuna tiklanir ve uygulamadan cikis yapıldığı görüntülenir.
 
 
 Edit Account
@@ -50,7 +59,7 @@ Tags: firefox,Add_Money_Amount_Control
 
 Transfer Money
 -------------------
-Tags: firefox,Transfer_Money
+Tags: edge,Transfer_Money
 * Web sayfası "https://catchylabs-webclient.testinium.com/" adresinden açılır.
 * Kullanici adi ve şifre ile giris yapilir.
 * Transfer Money butonuna tiklanir.
@@ -62,7 +71,7 @@ Tags: firefox,Transfer_Money
 
 Transfer Money Receive Account Negative
 -------------------
-Tags: firefox,Transfer_Money_Receive_Account_Negative
+Tags: edge,Transfer_Money_Receive_Account_Negative
 * Web sayfası "https://catchylabs-webclient.testinium.com/" adresinden açılır.
 * Kullanici adi ve şifre ile giris yapilir.
 * Transfer Money butonuna tiklanir.
@@ -75,7 +84,7 @@ Tags: firefox,Transfer_Money_Receive_Account_Negative
 
 Add Money Warning Messages
 ----------------------
-Tags:edge,Add_Money_Warning_Messages
+Tags:mobile,android,Add_Money_Warning_Messages
 
 * Web sayfası "https://catchylabs-webclient.testinium.com/" adresinden açılır.
 * Kullanici adi ve şifre ile giris yapilir.
@@ -92,7 +101,7 @@ Tags:edge,Add_Money_Warning_Messages
 
 Add Money Warning Messages And Blocker
 ----------------------
-Tags:edge,Add_Money_Warning_Messages_And_Blocker
+Tags:chrome,Add_Money_Warning_Messages_And_Blocker
 
 * Web sayfası "https://catchylabs-webclient.testinium.com/" adresinden açılır.
 * Kullanici adi ve şifre ile giris yapilir.

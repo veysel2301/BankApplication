@@ -350,6 +350,20 @@ public class StepDefinitions {
             throw new IllegalStateException("Element metni doğrulanırken hata oluştu: " + e.getMessage(), e);
         }
 
+
+    }
+    @Step("<key> elementine js ile tiklanir.")
+    public void clickWithJavaScript(String key) {
+        try {
+            By locator =getBy(key);
+            WebElement element = driver.findElement(locator);
+
+            JavascriptExecutor js = (JavascriptExecutor) driver;
+            js.executeScript("arguments[0].click();", element);
+            logger.info("JavaScript ile tıklama başarılı.");
+        } catch (Exception e) {
+            logger.error("JavaScript ile tıklama başarısız: " + e.getMessage());
+        }
     }
 
 
