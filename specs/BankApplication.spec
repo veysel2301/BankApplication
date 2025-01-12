@@ -47,6 +47,7 @@ Add Money Amount Control
 Tags: firefox,Add_Money_Amount_Control
 * Web sayfası "https://catchylabs-webclient.testinium.com/" adresinden açılır.
 * Kullanici adi ve şifre ile giris yapilir.
+* Sayfada "amountTextControl" elementinin görünür olana kadar beklenir.
 * "amountTextControl" elementindeki degeri hafizaya kaydet
 * Add Money butonuna tiklanir.
 * Card number alanina 16 haneli kart numarasi girilir.
@@ -84,7 +85,7 @@ Tags: edge,Transfer_Money_Receive_Account_Negative
 
 Add Money Warning Messages
 ----------------------
-Tags:mobile,android,Add_Money_Warning_Messages
+Tags:chrome,Add_Money_Warning_Messages
 
 * Web sayfası "https://catchylabs-webclient.testinium.com/" adresinden açılır.
 * Kullanici adi ve şifre ile giris yapilir.

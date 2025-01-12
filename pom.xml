@@ -76,15 +76,11 @@
         </dependency>
 
 
-        <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-testng -->
-
         <dependency>
             <groupId>org.aspectj</groupId>
             <artifactId>aspectjweaver</artifactId>
             <version>${aspectj.version}</version>
             </dependency>
-
-
 
 
     </dependencies>

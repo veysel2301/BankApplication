@@ -4,6 +4,7 @@ This is a concept file with following syntax for each concept.
 # Add Money butonuna tiklanir.
 * Sayfada "addMoneyButton" elementinin görünür olana kadar beklenir.
 * Sayfada "addMoneyButton" elementine tıklanır.
+* Sayfada "addMoneyPageControl" elementinin görünür olana kadar beklenir.
 * Sayfada "addMoneyPageControl" elementinin text'i "Add money" ile doğrulanır.
 * Sayfada "editAccountPageAccountName" elementinin varlığı doğrulanır.
 * "addMoneyPageVisibleControl" elementinde yer alan textler dogrulanir.
