@@ -136,5 +136,9 @@
   "addMoneyWarningAmount": {
     "value": "[class] [class='css-175oi2r r-13qz1uu']:nth-of-type(8) [class='css-146c3p1 r-yv33h5 r-1jb9un0 r-1enofrn r-14gqq1x']",
     "type" : "css"
+  },
+  "transferMoneyReceiveAccountOption": {
+    "value": "//option[text()='Testinium-3']",
+    "type" : "xpath"
   }
 }

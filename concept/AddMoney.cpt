@@ -11,7 +11,7 @@ This is a concept file with following syntax for each concept.
 # Card Number alanina <cardNumber> yazilir.
 * Sayfada "addMoneyPageCardNumber" alanına <cardNumber> yazılır.
 
-# Card number alanina 20 haneli kart numarasi girilir.
+# Card number alanina 16 haneli kart numarasi girilir.
 * Card Number alanina "1234123412341234" yazilir.
 
 # Card Holder alanina kart sahibi adi <cardHolder> yazilir.
@@ -39,7 +39,6 @@ This is a concept file with following syntax for each concept.
 * Amount alanina eklenmek istenen miktar "100" yazilir.
 # Add butonuna tiklanir.
 * Sayfada "addMoneyAddButton" elementine tıklanır.
-* Eklenen miktarin ne kadar oldugu hesaplanir.
 
 # Eklenen miktarin ne kadar oldugu hesaplanir.
 * "addMoneyAmount" elementindeki eklenen tutari "100" olarak kaydet
@@ -86,5 +85,15 @@ This is a concept file with following syntax for each concept.
 * Sayfada "addMoneyCvv" alanına "12" yazılır.
 * Sayfada "addMoneyAmount" elementine tıklanır.
 * Sayfada "addMoneyWarningCvv" elementinin text'i "Too short" ile doğrulanır.
+
+# Amount alanindaki miktar kontrol edilir.
+* Sayfada "transferMoneyTransferAmountControl" elementinin görünür olana kadar beklenir.
+* "2" saniye bekle
+* Bakiyeyi "transferMoneyTransferAmountControl" elementinden al ve kontrol et
+
+# Card Number alanina fazla veri girilerek uyarı aldığı görüntülenir.
+* Sayfada "addMoneyPageCardNumber" alanına "12341234123412341234" yazılır.
+* Sayfada "addMoneyPageCardHolder" elementine tıklanır.
+* Sayfada "addMoneyWarningCardNumber" elementinin text'i "Too Long!" ile doğrulanır.
 
 

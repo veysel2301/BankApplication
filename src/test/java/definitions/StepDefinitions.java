@@ -311,7 +311,7 @@ public class StepDefinitions {
         logger.info("Difference: $" + decimalFormat.format(actualDifference));
         logger.info("Transfer Amount: $" + decimalFormat.format(transfer));
         assertThat(transfer)
-                .withFailMessage("Değerler eşit değil! Added or Transfer Amount: %s, Amount: %s", transfer, addedAmount)
+                .withFailMessage("Değerler eşit değil! Transfer Amount: %s, Amount: %s", transfer, addedAmount)
                 .isEqualTo(addedAmount);
     }
     @Step("Add money icin <initialKey> de ki baslangic tutarini alip eklenen miktar <addedKey> ile karsilastir")
@@ -350,6 +350,31 @@ public class StepDefinitions {
             throw new IllegalStateException("Element metni doğrulanırken hata oluştu: " + e.getMessage(), e);
         }
 
+    }
+
+
+    @Step("Bakiyeyi <key> elementinden al ve kontrol et")
+    public void validateBakiye(String key) throws ParseException {
+
+        By locator=getBy(key);
+        WebElement bakiyeElement = driver.findElement(locator);
+        String bakiyeText = bakiyeElement.getText();
+        DecimalFormat decimalFormat = new DecimalFormat("###,###,###.00");
+
+        Number number = decimalFormat.parse(bakiyeText);
+        double bakiye = number.doubleValue();
+
+        try {
+            if (bakiye > 0) {
+                logger.info("Bakiye geçerli: " + bakiye);
+            } else {
+                logger.info("Bakiye geçersiz! Değer: " + bakiye);
+                throw new AssertionError("Bakiye geçersiz. Değer: " + bakiye);
+            }
+        } catch (NumberFormatException e) {
+            System.err.println("Bakiye değeri sayısal bir formatta değil: " + bakiyeText);
+            throw new AssertionError("Bakiye değeri sayısal bir formatta değil: " + bakiyeText, e);
+        }
     }
 
 }

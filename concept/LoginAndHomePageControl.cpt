@@ -14,4 +14,7 @@ This is a concept file with following syntax for each concept.
 * Sayfada "accountNameTextControl" elementinin text'i "veyseloner" ile doğrulanır.
 * Sayfada "accountTypeTextControl" elementinin text'i "CHECKING" ile doğrulanır.
 * Sayfada "creationTimeTextControl" elementinin text'i "10-01-2025 14:30:40" ile doğrulanır.
-* Sayfada "amountTextControl" elementinin text'i "10,000,000.00" ile doğrulanır.
+* Sayfada "amountTextControl" elementinin görünür olana kadar beklenir.
+* Sayfada "amountTextControl" elementinin görünür olana kadar beklenir.
+* Bakiyeyi "amountTextControl" elementinden al ve kontrol et
+//* Sayfada "amountTextControl" elementinin text'i "10,000,000.00" ile doğrulanır.

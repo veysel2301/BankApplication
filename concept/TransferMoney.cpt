@@ -9,14 +9,16 @@ This is a concept file with following syntax for each concept.
 * Sayfada "senderAccount" elementinin text'i "veyseloner" ile doğrulanır.
 * "transferMoneyPageControl" elementinde yer alan textler dogrulanir.
 
-# Sender account <sender> ve Recieve account secilir
+# Sender account <sender> secilir.
 * "transferMoneySenderAccountSelect" elementinde yer alan seçeneklerden <sender> degerini sec
 * "30" saniye bekle
-//* "transferMoneyReceiveAccountSelect" elementinde yer alan seçeneklerden <receive> degerini sec
+# Recieve account <receive> secimi yapilir.
+* "transferMoneyReceiveAccountSelect" elementinde yer alan seçeneklerden <receive> degerini sec
 
-# Sender acccount ve Recieve account secimi yapilir.
-//Receive eke hata verdir
-* Sender account "veyseloner" ve Recieve account secilir
+# Sender acccount secimi yapilir.
+* Sender account "veyseloner" secilir.
+# Recieve acccount secimi yapilir.
+* Recieve account "Testinium-3" secimi yapilir.
 
 # Amount alanina transfer edilmek istenilen miktar yazilir.
 * Sayfada "transferMoneyAmount" alanına "100" yazılır.
