@@ -14,13 +14,12 @@ This is a concept file with following syntax for each concept.
 
 # Sender account <sender> secilir.
 * "transferMoneySenderAccountSelect" elementinde yer alan seçeneklerden <sender> degerini sec
-# Recieve account <receive> secimi yapilir.
-* "transferMoneyReceiveAccountSelect" elementinde yer alan seçeneklerden <receive> degerini sec
 
 # Sender acccount secimi yapilir.
 * Sender account "veyseloner" secilir.
 # Recieve acccount secimi yapilir.
-* Recieve account "Testinium-3" secimi yapilir.
+* Sayfada "transferMoneyReceiveAccountOption" elementinin görünür olana kadar beklenir.
+* Sayfada "transferMoneyReceiveAccountOption" elementine tıklanır.
 
 # Amount alanina transfer edilmek istenilen miktar yazilir.
 * Sayfada "transferMoneyAmount" alanına "100" yazılır.

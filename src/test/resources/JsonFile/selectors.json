@@ -146,7 +146,7 @@
     "type" : "css"
   },
   "transferMoneyReceiveAccountOption": {
-    "value": "//option[text()='Testinium-3']",
+    "value": "//option[text()='Testinium-1']",
     "type" : "xpath"
   }
 }
