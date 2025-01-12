@@ -41,7 +41,6 @@ public class StepDefinitions {
                     url = "http://" + url;
                 }
                 driver.get(url);
-                // Loglama işlemi
                 logger.info("Web sayfası başarıyla açıldı: " + url);
             } catch (Exception e) {
                 logger.error("Web sayfası açılamadı: " + e.getMessage(), e);
@@ -222,16 +221,14 @@ public class StepDefinitions {
     @Step("<key> elementindeki degeri hafizaya kaydet")
     public void saveCurrentAmount(String key) {
         try {
-            // Selector'ü al
             By selector = getBy(key);
 
-            // Elementi bul
             WebElement amountElement = driver.findElement(selector);
             if (amountElement == null) {
                 throw new NullPointerException("Element not found for key: " + key);
             }
 
-            // Elementin text değerini al
+
             String amountText = amountElement.getText();
             if (amountText == null || amountText.isEmpty()) {
                 throw new NullPointerException("Text is null or empty for key: " + key);
@@ -239,34 +236,32 @@ public class StepDefinitions {
 
             logger.info("Hafizaya kaydedilen deger (orijinal): " + amountText);
 
-            // AmountText'i parse ederek sayısal değere dönüştür ve hafızaya kaydet
+
             double amount = parsedAmount(amountText);
             logger.info("Hafizaya kaydedilen deger (numeric): " + amount);
 
-            // Hafızaya kaydet
+
             ValueStorage.storeValue(key, amount);
 
         } catch (Exception e) {
             logger.error("Error while saving current amount for key: " + key, e);
-            throw e; // Hatanın Gauge tarafından raporlanması için tekrar fırlatılır
+            throw e;
         }
     }
 
     private double parsedAmount(String amountText) {
         try {
-            // Virgülleri kaldır
+
             amountText = amountText.replace(",", "");
 
-            // Sayıyı parse et
             double amount = Double.parseDouble(amountText);
 
-            // Dönen sayıyı geri döndür
             return amount;
         } catch (NumberFormatException e) {
             throw new IllegalArgumentException("Error parsing amount: " + amountText, e);
         }
     }
-    // String olarak gelen para miktarını düzgün formatta dönüştürme metodu
+
     private double parseAmount(String amountText) {
         try {
             // Virgülleri kaldır, sadece sayıyı almak için
@@ -283,7 +278,7 @@ public class StepDefinitions {
                 }
             }
 
-            // Sayıyı double'a çevir
+
             return Double.parseDouble(cleanedText);
         } catch (NumberFormatException e) {
             throw new IllegalArgumentException("Error parsing amount: " + amountText, e);
