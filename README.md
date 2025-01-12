@@ -112,16 +112,27 @@ Projenizde tarayıcı tabanlı testleri çalıştırmak için belirli tag'ler ku
   Tags:firefox
   ```
 
+- **Edge İçin Test Başlatma**:
+  ```bash
+  Tags:edge
+  ```
+- **Mobilweb İçin Test Başlatma**:
+  ```bash
+  Tags:mobil,android
+  ```
+
 - **Tag'lerin kullanım örneği**:
   ```gauge
   # Chrome Tarayıcı ile Test Senaryosu
   Tags:chrome
   Senaryo: Kullanıcı girişi başarılı olmalı
- 
+  ```
  
 **Tag Yapısı:**
 - `@chrome` tag'ı ile Chrome tarayıcısında test çalıştırılacaktır.
 - `@firefox` tag'ı ile Firefox tarayıcısında test çalıştırılacaktır.
+- `@edge` tag'ı ile Edge tarayıcısında test çalıştırılacaktır.
+- `@mobil` tag'ı ile `@android`tag'ı veya `@ios`tag'ı kullanarak test Mobilweb ile uyumlu bir şekilde çalıştırılacaktır.
 
 Bu şekilde testlerinizi sadece belirli tarayıcılar ile çalıştırarak çapraz tarayıcı testi gerçekleştirebilirsiniz.
 
